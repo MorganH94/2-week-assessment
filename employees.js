@@ -39,8 +39,11 @@ const Employee = class {
 */
 
 //CODE HERE
-
-const empOne
+empOne = newClassVariable {
+    this.name = 'Jess';
+    this.shifts = 'weekday mornings, weekday afternoons'
+}
+// const empOne
 
 /*
     Call the `getSchedule` method on the

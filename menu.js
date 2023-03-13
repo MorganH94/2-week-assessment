@@ -62,7 +62,7 @@ console.log(Pizza.popularity)
 
 //CODE HERE
 
-
+console.log(Pizza.tags[0])
 
 /*
     Third, destructure the price off of the
@@ -73,6 +73,13 @@ console.log(Pizza.popularity)
 
 //CODE HERE
 
+const pizzaPrice = {
+    oldPrice: 7,
+    newPrice: 6
+}
+const {oldPrice, newPrice} = pizzaPrice
+
+console.log(newPrice)
 
 /*
     Fourth, and last, destructure the category
@@ -83,6 +90,13 @@ console.log(Pizza.popularity)
 
 //CODE HERE
 
+const category = {
+    oldCategory: 'entree',
+    newCategory: 'appetizer'
+}
+const {oldCategory, newCategory} = category
+
+console.log(newCategory)
 
 //////////////////PROBLEM 3////////////////////
 /* 

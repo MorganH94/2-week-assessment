@@ -23,9 +23,9 @@
 
 //CODE HERE
 
-const greetUser = () => `Welcome back, ${username}`
+const greetUser = (username) => console.log(`Welcome back, ${username}`)
 
-
+greetUser('Andrew')
 
 //////////////////PROBLEM 2////////////////////
 /* 
