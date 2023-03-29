@@ -62,7 +62,7 @@ console.log(Pizza.popularity)
 
 //CODE HERE
 
-console.log(Pizza.tags[0])
+console.log(Pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -73,13 +73,8 @@ console.log(Pizza.tags[0])
 
 //CODE HERE
 
-const pizzaPrice = {
-    oldPrice: 7,
-    newPrice: 6
-}
-const {oldPrice, newPrice} = pizzaPrice
-
-console.log(newPrice)
+const {price} = Pizza;
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -90,13 +85,8 @@ console.log(newPrice)
 
 //CODE HERE
 
-const category = {
-    oldCategory: 'entree',
-    newCategory: 'appetizer'
-}
-const {oldCategory, newCategory} = category
-
-console.log(newCategory)
+const {category} = Pizza;
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -112,6 +102,42 @@ console.log(newCategory)
 
 //CODE HERE
 
+const foodArr = [
+    { name: 'Impossible Burger',
+    price: 12,
+    category: 'main course',
+    popularity: 50,
+    rating: 10,
+    tags: ['vegan friendly', 'plant-based']},
+
+    { name: 'Grilled Cheese',
+    price: 10,
+    category: 'entree',
+    popularity: 75,
+    rating: 9.5,
+    tags: ['kid friendly', 'great with soup']},
+
+    { name: 'Tomato soup',
+    price: 7,
+    category: 'side',
+    popularity: 75,
+    rating: 8,
+    tags: ['vegetarian friendly', 'great with grilled cheese']},
+
+    { name: 'French Fries',
+    price: 5,
+    category: 'side',
+    popularity: 100,
+    rating: 10,
+    tags: ['kid approved', 'side dish']},
+
+    { name: 'Quesadilla',
+    price: 6,
+    category: 'appetizer',
+    popularity: 75,
+    rating: 8,
+    tags: ['starter', 'shareable']}
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -128,9 +154,11 @@ console.log(newCategory)
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter((checkTags) => {
+    return checkTags.tags.indexOf('starter') >= 0
+})
 
-
+console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 

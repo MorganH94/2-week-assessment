@@ -39,12 +39,10 @@ class Ticket{
         this.status = 'queued';
     }
     updateStatus(newStatus){
-        this.status = newStatus
-
-        console.log(`The order for customer ${this.customerId} is
-        now ${newStatus}`)
+        console.log(`The order for customer ${CUSTOMERID} is now ${STATUS}.`)
+    }
 }
-
+const updatedStatus = new Ticket()
 
 
 /*
@@ -59,12 +57,12 @@ class Ticket{
 */
 
 //CODE HERE
+const firstTicket = new Ticket('pizza, bread, and soda')
+console.log(firstTicket.items)
 
-
-//*
-    //Call the `updateStatus` method on
-    //`firstTicket` passing in the string
-   // 'cooking'
-
-
-   //
+//
+//     Call the `updateStatus` method on
+//     `firstTicket` passing in the string
+//    'cooking'
+// 
+firstTicket.updateStatus('cooking')

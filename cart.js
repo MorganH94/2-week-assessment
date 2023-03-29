@@ -63,8 +63,8 @@ console.log(cartTotal)
 
 //CODE HERE
 
-function calcFinalPrice(cartTotal, couponValue, tax){
-    let total = cartTotal + (cartTotal*(tax/.06))
+function calcFinalPrice(cartTotal, couponValue, tax++){
+    let total = cartTotal * (tax)
     total -= couponValue
     return(total)
 }
@@ -94,12 +94,24 @@ console.log(finalPrice)
 
 /*
     TEXT ANSWER HERE
-
+The properties that my custoemr object will have are name, phone number, review, and favorite dish.
+I chose these properties because they all seem like valuable information to have
+about the customer frequenting your restaurant. You would like to be able to know their name,
+have their nnumber on file for reservations or waitlists, know their review of the food and service
+for growth opportunities, and lastly, their favorite dish to help know what is popular
+and to help get to know your customers better.
 */
-
+ 
 /*
     Now, create a customer object following your own
     guidelines.
 */
 
 //CODE HERE
+let customer = {
+    name: 'Harry',
+    phoneNumber: '(480)-555-2894',
+    review: 5,
+    favoriteDish: 'Grilled Cheese'
+
+}
